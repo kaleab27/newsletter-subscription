@@ -1,3 +1,4 @@
+![screenshot](https://github.com/kaleab27/newsletter-subscription/blob/main/screenshot.png?raw=true)
 # Quick start
 
 ```
