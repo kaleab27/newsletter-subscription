@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    background-color: #E5E7F9;
+}
+input, button{
+    font-family: inherit;
+    padding: 10px 15px;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.card-header{
+    font-weight: 700;
+}
+.newsletter-wrapper{
+    width: max(90%, 300px);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1)
+}
+.newsletter-subscription{
+    overflow: hidden;
+    margin-left: calc(100vw * 0.05);
+    margin-right: calc(100vw * 0.05);
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 5px;
+}
+.options > span{
+    padding: 10px 20px;
+    display: flex;
+}
+.options .selected{
+    background-color: #F3F4FA;
+}
+.options > span:hover{
+    background-color: #F3F4FA;
+}
+.options label{
+    display: flex;
+    flex-direction: column;
+}
+.options > span .checkbox{
+    margin-right: 10px;
+    align-self: flex-start;
+}
+.label .main-label{
+    font-weight: 500;
+}
+.label .label-description{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.subscribe-form{
+    margin-top: 20px;
+}
+.email-input{
+    border: 1px solid #999;
+    border-radius: 3px;;
+}
+.subscribe-button{
+    padding: 10px 20px;
+    background-color: #7E6EE1;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid #7E6EE1;
+}
+
+
+/* ############################## */
+/* checkbox */
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="checkbox"] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 1px solid gray;
+  /* Adjusts the position of the checkboxes on the text baseline */
+  vertical-align: -2px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  color: green;
+}
+
+input[type="checkbox"]::before {
+  content: url(./assets/correct.svg);
+  position: absolute;
+  font-size: 1.2em;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+  /* Use `visibility` instead of `display` to avoid recalculating layout */
+  visibility: visible;
+  background-color: #7E6EE1;
+}
+
+input[type="checkbox"]:disabled {
+  border-color: black;
+  background: #ddd;
+  color: gray;
+}
