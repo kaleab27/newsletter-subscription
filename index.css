@@ -69,16 +69,21 @@ input, button{
     margin-top: 20px;
 }
 .email-input{
+    width: 250px;
     border: 1px solid #999;
-    border-radius: 3px;;
+    /* border-radius: 3px; */
+}
+.email-input:focus{
+    border: 1px solid #7E6EE1;
+    box-shadow: none;
 }
 .subscribe-button{
     padding: 10px 20px;
     background-color: #7E6EE1;
     color: white;
     border: none;
-    border-radius: 3px;
-    border: 1px solid #7E6EE1;
+    /* border-radius: 3px; */
+    border: 2px solid #7E6EE1;
 }
 
 
